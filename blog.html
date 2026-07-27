@@ -1,296 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <meta name="description" content="합정 셔츠룸 찐 후기와 꿀팁 대방출. 내가 직접 가보고 엄선한 곳만 모았어. 분위기, 서비스, 가격까지 다 알려준다.">
-    <meta name="keywords" content="합정 셔츠룸, 합정 셔츠룸 모음, 합정 셔츠룸 추천, 합정 셔츠룸 후기, 합정 셔츠룸 블로그, 합정 셔츠룸 꿀팁">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://t3b06-hj-shirts-list-1.vercel.app/blog">
-    <!-- Open Graph -->
-    <meta property="og:title" content="합정 셔츠룸 모음 | 찐브로를 위한 핫플리스트 - 블로그">
-    <meta property="og:description" content="합정 셔츠룸 진짜 리뷰와 꿀팁. 내돈내산 후기로 엄선한 곳만 모았어요. 전화 010-6279-0862로 지금 예약 고고!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b06-hj-shirts-list-1.vercel.app/blog">
-    <meta property="og:image" content="https://t3b06-hj-shirts-list-1.vercel.app/og-image.jpg">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>합정 셔츠룸 모음 | 찐브로를 위한 핫플리스트 - 블로그</title>
-    <style>
-        /* Brutalist Reset & Base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Courier New', 'Courier', monospace;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        /* Typography */
-        h1, h2, h3, h4 {
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-            line-height: 1.1;
-        }
-        h1 {
-            font-size: 3.5rem;
-            color: #ff007f;
-            text-shadow: 4px 4px 0 #00ffcc;
-            margin-bottom: 1.5rem;
-        }
-        h2 {
-            font-size: 2.2rem;
-            color: #00ffcc;
-            border-left: 8px solid #ff007f;
-            padding-left: 1rem;
-            margin: 2rem 0 1rem;
-        }
-        h3 {
-            font-size: 1.6rem;
-            color: #ffbd00;
-            margin: 1.5rem 0 0.8rem;
-        }
-        p, li, blockquote {
-            font-size: 1.1rem;
-            color: #c0c0c0;
-            margin-bottom: 1rem;
-        }
-        a {
-            color: #ff007f;
-            text-decoration: underline wavy #00ffcc 2px;
-            transition: color 0.2s;
-        }
-        a:hover {
-            color: #00ffcc;
-            text-decoration-color: #ff007f;
-        }
-        /* Container */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        /* Header */
-        header {
-            background: #111;
-            border-bottom: 4px solid #ff007f;
-            padding: 1.2rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .logo {
-            font-size: 2rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            color: #00ffcc;
-            text-decoration: none;
-        }
-        .logo span {
-            color: #ff007f;
-        }
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-        nav ul li a {
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: #e0e0e0;
-            padding: 0.3rem 0.6rem;
-            border: 2px solid transparent;
-            transition: all 0.2s;
-        }
-        nav ul li a:hover {
-            border-color: #00ffcc;
-            color: #00ffcc;
-            transform: scale(1.05);
-        }
-        nav ul li a.active {
-            border-color: #ff007f;
-            color: #ff007f;
-        }
-        /* Mobile nav */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .hamburger span {
-            width: 30px;
-            height: 4px;
-            background: #e0e0e0;
-            display: block;
-            transition: 0.3s;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                flex-direction: column;
-                background: #111;
-                position: absolute;
-                top: 100%;
-                right: 0;
-                width: 100%;
-                padding: 1rem;
-                text-align: center;
-                border-top: 2px solid #ff007f;
-            }
-            nav ul.show {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            h1 { font-size: 2.4rem; }
-            h2 { font-size: 1.8rem; }
-        }
-        /* Main Content */
-        main {
-            flex: 1;
-            padding: 2rem 0;
-        }
-        /* Blog post card style */
-        .blog-post {
-            background: #141414;
-            border: 3px solid #00ffcc;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 8px 8px 0 #ff007f;
-        }
-        .blog-post .meta {
-            font-size: 0.9rem;
-            color: #888;
-            border-bottom: 2px dashed #ff007f;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .blog-post blockquote {
-            border-left: 6px solid #ffbd00;
-            padding-left: 1.2rem;
-            font-style: italic;
-            background: #1a1a1a;
-            margin: 1.5rem 0;
-        }
-        .blog-post ul {
-            list-style: square;
-            padding-left: 1.5rem;
-            margin: 1rem 0;
-        }
-        .blog-post ul li {
-            margin-bottom: 0.5rem;
-        }
-        .cta-tel {
-            display: inline-block;
-            background: #ff007f;
-            color: #0a0a0a;
-            font-weight: 900;
-            font-size: 1.3rem;
-            padding: 0.8rem 2rem;
-            text-decoration: none;
-            border: 3px solid #00ffcc;
-            transition: all 0.2s;
-            margin-top: 1.5rem;
-        }
-        .cta-tel:hover {
-            background: #00ffcc;
-            border-color: #ff007f;
-            transform: scale(1.02);
-        }
-        /* Footer */
-        footer {
-            background: #111;
-            border-top: 4px solid #00ffcc;
-            padding: 1.5rem 0;
-            text-align: center;
-            margin-top: auto;
-        }
-        footer p {
-            font-size: 1rem;
-            color: #666;
-        }
-        footer a {
-            color: #ff007f;
-        }
-        /* JSON-LD hidden */
-        .json-ld {
-            display: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>블로그 - 합정 셔츠룸 모음</title>
+<meta name="description" content="합정에 위치한 다양한 셔츠룸을 한눈에 비교하고, 이용 목적·인원·시간대별로 적합한 장소를 선택하는 방법을 상세히 안내합니다.">
+<meta name="keywords" content="합정 셔츠룸, 셔츠룸 모음, 합정 셔츠룸 정보, 합정 공간 대여, 셔츠룸 이용 가이드">
+<link rel="canonical" href="https://hapjeong-shirt-info.program-school.online/blog.html">
+<meta property="og:title" content="합정 셔츠룸 모음 — 조건별 선택 가이드와 이용 전 체크리스트">
+<meta property="og:description" content="합정 셔츠룸을 목적별·인원별로 비교하고, 예약 전 확인해야 할 사항을 정리한 종합 가이드">
+<meta property="og:url" content="https://hapjeong-shirt-info.program-school.online/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://hapjeong-shirt-info.program-school.online/og-image.jpg">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Header -->
+<body class="responsive-768">
+  <!-- 네비게이션 시작 -->
+  <nav class="nav-present">
+    <div class="container">
+      <a href="/" class="m-ico-cl0q">홈</a>
+      <ul class="m-grid-jy4c">
+        <li><a href="/overview">전체 보기</a></li>
+        <li><a href="/guide">이용 가이드</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">문의</a></li>
+      </ul>
+      <div class="hamburger-menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  <!-- 네비게이션 끝 -->
+
+  <main class="container">
     <header>
-        <div class="container">
-            <nav>
-                <a href="/" class="logo"><span>합정</span>셔츠룸</a>
-                <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('show')">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul>
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/about">소개</a></li>
-                    <li><a href="/blog" class="active">블로그</a></li>
-                    <li><a href="/contact">연락처</a></li>
-                </ul>
-            </nav>
-        </div>
+      <h1>합정 셔츠룸 모음 – 전문가가 제안하는 선택 가이드</h1>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <h1>합정 셔츠룸,<br>이거 모르면 그냥 집에 있어</h1>
-            <div class="blog-post">
-                <div class="meta">
-                    <span>📅 2025.03.21</span> | 
-                    <span>✍️ 합정브로</span> | 
-                    <span>🔥 조회 2,301</span>
-                </div>
+    <section id="intro">
+      <h2>합정 셔츠룸, 왜 중요한가?</h2>
+      <p>합정은 창업·문화·예술이 어우러진 지역으로, 다양한 규모와 형태의 셔츠룸이 밀집해 있습니다. 셔츠룸은 사진 촬영, 기업 워크숍, 소규모 모임 등 여러 목적에 활용될 수 있어, 목적에 맞는 공간을 정확히 선택하는 것이 성공적인 행사의 핵심입니다.</p>
+      <p>하지만 셔츠룸마다 제공하는 설비, 시간대별 비용, 인원 수용 한계가 크게 다릅니다. 본 가이드에서는 이러한 차이점을 체계적으로 분석하고, 상황별 최적의 선택지를 제시합니다.</p>
+    </section>
 
-                <p>야, 브로. 합정에서 셔츠룸 좀 알아보고 있었어? 맞아, 여기저기 정보도 많고 말도 많고 난리야. 근데 내가 직접 발로 뛰고 내 돈 내고 다녀온 후기를 진짜 딱 정리해줄게. 가짜 광고나 알바 후기 말고, <strong>찐 브로</strong>가 알려주는 꿀팁이니까 믿어도 된다.</p>
+    <section id="size">
+      <h2>인원 규모별 셔츠룸 선택 기준</h2>
+      <p><strong>소규모(2~5인)</strong>는 개인 포트폴리오 촬영이나 1:1 인터뷰에 적합합니다. 이 경우 조명 설비와 음향 차단 수준이 중요한 판단 요소가 됩니다. 조명이 고정형인지, 이동형인지 여부, 그리고 외부 소음 차단이 얼마나 뛰어난지를 확인하세요.</p>
+      <p><strong>중규모(6~12인)</strong>는 팀 브레인스토밍, 제품 시연, 작은 워크숍 등에 활용됩니다. 이때는 테이블 배치와 전원 콘센트 수가 핵심입니다. 테이블이 이동식인지 고정식인지, 전원 플러그가 방마다 얼마나 배치되어 있는지를 미리 체크하면 현장에서 불편함을 최소화할 수 있습니다.</p>
+      <p><strong>대규모(13인 이상)</strong>는 촬영 세트 구성이나 대규모 교육, 프레젠테이션에 적합합니다. 이 경우 천장 높이와 공간의 넓이, 그리고 적절한 환기 설비가 필수입니다. 천장 높이가 3m 이상인 공간은 조명 장비를 자유롭게 배치할 수 있어, 보다 전문적인 촬영이 가능합니다.</p>
+    </section>
 
-                <h2>내가 합정에서 셔츠룸 고를 때 보는 3가지</h2>
-                <p>사실 처음엔 나도 아무 데나 갔다가 돈만 날리고 분위기 개판인 곳도 있었어. 그래서 내 기준을 정했어.</p>
-                <ul>
-                    <li><strong>분위기</strong> – 인테리어가 좀 센스 있어야 하고, 조명이 너무 밝거나 너무 어둡지 않은 곳.</li>
-                    <li><strong>서비스</strong> – 매니저분들 친절하고, 음료나 안주가 맛있어야 함. 기본이 된장이잖아.</li>
-                    <li><strong>가격</strong> – 합정 셔츠룸 가격대가 천차만별인데, 진짜 비싼 데가 좋은 건 아님. 합리적인 곳을 골라야 오래 감.</li>
-                </ul>
+    <section id="time">
+      <h2>시간대별 활용 팁</h2>
+      <p>주중 낮 시간대(09:00~18:00)는 업무용 셔츠룸 이용이 활발합니다. 이때는 예약이 빨리 마감될 가능성이 높으므로 최소 2주 전 사전 예약을 권장합니다. 또한, 낮 시간대는 일광을 활용한 자연광 촬영이 가능하므로, 조명 비용을 절감할 수 있습니다.</p>
+      <p>저녁·야간 시간대(18:00~24:00)는 촬영 및 파티용으로 인기가 많습니다. 이때는 소음 제한이 있는 공간인지 확인이 필요합니다. 방음 설비가 미비한 경우 인근 카페·바와의 소음 간섭이 발생할 수 있으므로, 소음 차단 설비가 설치된 방을 우선적으로 선택하세요.</p>
+      <p>주말·공휴일은 특별 할인이 적용되는 경우가 많습니다. 그러나 동시에 경쟁이 심하므로, 가능한 한 빨리 일정 확정 후 예약을 진행하는 것이 안전합니다.</p>
+    </section>
 
-                <h3>1. 🏆 에이스 셔츠룸 (합정역 3번 출구)</h3>
-                <p>여기는 내가 첫 방문 때부터 반한 곳. <strong>분위기가 미쳤어.</strong> 블랙 & 네온 조합에 감성 제대로. 매니저분들도 찐으로 친절하고, 서비스가 진짜 빠릿빠릿해. 가격은 살짝 높은 편인데 그만한 값어치를 함. 처음 가는 브로한테 강추.</p>
+    <section id="purpose">
+      <h2>목적별 셔츠룸 특성</h2>
+      <p><strong>사진·영상 촬영</strong>은 조명, 배경, 전원 설비가 가장 중요한 요소입니다. 조명 키트와 백그라운드 색상이 포함된 방을 선택하고, 전원 플러그가 최소 4개 이상 있는지를 확인하세요.</p>
+      <p><strong>비즈니스 미팅·프레젠테이션</strong>은 화면·프로젝터 연결과 고속 인터넷이 핵심입니다. HDMI·DP 포트가 구비된 회의용 스크린이 있는지, 그리고 Wi‑Fi 속도가 최소 100Mbps 이상인지 사전에 확인하십시오.</p>
+      <p><strong>워크숍·교육</strong>은 좌석 배치와 화이트보드, 마이크·스피커 시스템이 필요합니다. 이동식 테이블·의자를 제공하는지, 그리고 화이트보드가 벽면에 설치돼 있는지 여부를 체크하면 현장 준비 시간을 크게 단축할 수 있습니다.</p>
+    </section>
 
-                <blockquote>
-                    “여기 오면 내가 마치 합정의 왕이 된 기분이야. 전화해서 예약하면 바로 룸까지 안내해줘. 전화번호는 010-6279-0862.”
-                </blockquote>
+    <section id="checklist">
+      <h2>예약 전 체크리스트</h2>
+      <ul class="m-grid-jy4c">
+        <li>① 인원 및 목적 확인</li>
+        <li>② 시간대 및 이용 일자 확정</li>
+        <li>③ 조명·전원·네트워크 설비 검증</li>
+        <li>④ 방음·환기·청결 상태 확인</li>
+        <li>⑤ 가격·취소 정책 비교</li>
+        <li>⑥ 현장 방문 가능 여부 파악</li>
+        <li>⑦ 계약서·이용 약관 사전 검토</li>
+        <li>⑧ 현장 담당자 연락처 확보</li>
+      </ul>
+      <p>위 체크리스트를 기반으로 사전 질문 리스트를 작성하면, 예약 단계에서 발생할 수 있는 불필요한 오해를 미연에 방지할 수 있습니다. 특히 “조명 전원은 별도 비용이 발생하나요?”와 같은 세부 질문은 계약 전 반드시 확인하시기 바랍니다.</p>
+    </section>
 
-                <h3>2. 🔥 베스트 셔츠룸 (합정동 먹자골목)</h3>
-                <p>여기는 가성비로 유명해. <strong>합정 셔츠룸 모음</strong>에서 빠지지 않고 나오는 곳인데, 이유가 있어. 음료랑 안주가 진짜 넉넉하고, 룸도 널찍널찍해. 단체로 가거나 부담 없이 즐기고 싶을 때 딱이야. 서비스도 나쁘지 않은데 가끔 매니저분들이 바쁘면 좀 늦을 때도 있음. 그래도 전반적으로 만족.</p
+    <section id="faq">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <h3>Q1. 셔츠룸 예약 취소 시 환불 정책은 어떻게 되나요?</h3>
+      <p>대부분의 셔츠룸은 최소 48시간 전 취소 시 전액 환불을 보장합니다. 그러나 주말·공휴일 예약의 경우, 취소 수수료가 20% 부과될 수 있으니 사전에 확인이 필요합니다.</p>
+      <h3>Q2. 촬영 장비를 직접 반입해도 되나요?</h3>
+      <p>예, 대부분의 셔츠룸은 외부 장비 반입을 허용하지만, 무게가 큰 장비는 사전 협의가 필요합니다. 특히 조명 스탠드·스크린 등의 대형 장비는 방 안의 구조물에 손상을 주지 않도록 주의해 주세요.</p>
+      <h3>Q3. 셔츠룸 내 와이파이 속도는 어떻게 확인하나요?</h3>
+      <p>예약 전 담당자에게 현재 평균 속도와 최고 속도를 문의하고, 현장 방문이 가능하다면 직접 속도 테스트를 진행하는 것이 가장 확실합니다.</p>
+      <h3>Q4. 셔츠룸 내부 청소는 어떻게 관리되나요?</h3>
+      <p>일반적으로 이용 전·후 기본 청소가 제공됩니다. 고급 옵션으로는 전담 청소 인력을 배정하는 서비스가 있으며, 추가 비용이 발생할 수 있습니다.</p>
+    </section>
+
+    <footer>
+      <p>© 2026 합정 셔츠룸 가이드. All rights reserved.</p>
+    </footer>
+  </main>
 </body>
 </html>
